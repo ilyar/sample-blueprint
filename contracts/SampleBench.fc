@@ -1,0 +1,35 @@
+#include "lib/SampleBench.auto.fc";
+
+;; recv_internal is the main function of the contract
+;; and is called when it receives a message from other contracts
+() recv_internal(cell msg, slice body) impure {
+    ;; ignore all empty messages
+    if (body.slice_empty?()) {
+        return ();
+    }
+    slice cs = msg.begin_parse();
+    int flags = cs~load_uint(4);
+    ;; ignore all bounced messages
+    if (flags & 1) {
+        return ();
+    }
+    ;; here we populate the storage variables
+    load_state();
+    ;; by convention, the first 32 bits of incoming message is the op
+    int op = body~load_op();
+    ;; by convention, the next 64 bits contain the "query id", although this is not always the case
+    body~skip_query_id();
+    ;; actiom message procesed
+    int change = body~load_change();
+    if (op == OP_INCR) {
+        counter += change;
+        save_state();
+        return ();
+    } elseif (op == OP_DECR) {
+        counter -= change;
+        save_state();
+        return ();
+    }
+    ;; if the message contains an op that is not known to this contract, we throw
+    throw(0xffff);
+}

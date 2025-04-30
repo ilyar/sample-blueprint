@@ -1,0 +1,18 @@
+_ id:uint32 counter:int32 = State;
+
+action_incr#49533468 queryId:uint64 change:uint8 = IncrAction;
+action_decr#0ee52db3 queryId:uint64 change:uint8 = DecrAction;
+_ _:IncrAction = Action;
+_ _:DecrAction = Action;
+
+// (crc16('state') & 0xffff) | 0x10000
+get_state#12f15 result:State = GetState;
+_ _:GetState = Gertter;
+
+// tlbc -qvvv contracts/SampleBench.tlb 2>&1 | tee build/SampleBench.txt
+// tlbc -o build/SampleBench -n SampleBench -z contracts/SampleBench.tlb
+// npx @ton-community/tlb-codegen -o wrappers/SampleBench.schema.ts contracts/SampleBench.tlb
+
+// experemental
+// npx @ton-community/tlb-codegen -o contracts/lib/SampleBench.auto.fc contracts/SampleBench.tlb
+// npx @ton-community/tlb-codegen -o contracts/lib/SampleBench.auto.tolk contracts/SampleBench.tlb

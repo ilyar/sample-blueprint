@@ -1,0 +1,82 @@
+;; automatically generated from `contracts/SampleBench.tlb`
+#include "stdlib.fc";
+
+;; _ id:uint32 counter:int32 = State;
+global int id;
+global int counter;
+const int STATE_ID_SIZE = 32;
+(slice, int) ~load_id(slice s) inline {
+    return s.load_uint(STATE_ID_SIZE);
+}
+(slice, ()) ~skip_id(slice s) inline {
+    return (s.skip_bits(STATE_ID_SIZE), ());
+}
+builder store_id(builder b, int id) inline {
+    return b.store_uint(id, STATE_ID_SIZE);
+}
+const int STATE_COUNTER_SIZE = 32;
+(slice, int) ~load_counter(slice s) inline {
+    return s.load_int(STATE_COUNTER_SIZE);
+}
+(slice, ()) ~skip_counter(slice s) inline {
+    return (s.skip_bits(STATE_COUNTER_SIZE), ());
+}
+builder store_counter(builder b, int counter) inline {
+    return b.store_int(counter, STATE_COUNTER_SIZE);
+}
+() load_state() impure {
+    var ds = get_data().begin_parse();
+    id = ds~load_id();
+    counter = ds~load_counter();
+    ds.end_parse();
+}
+() save_state() impure {
+    set_data(
+        begin_cell()
+        .store_id(id)
+        .store_counter(counter)
+        .end_cell()
+    );
+}
+;; action_incr#49533468 queryId:uint64 change:uint8 = IncrAction;
+;; action_decr#0ee52db3 queryId:uint64 change:uint8 = DecrAction;
+;; _ _:IncrAction = Action;
+;; _ _:DecrAction = Action;
+const OP_INCR = 0x49533468;
+const OP_DECR = 0x0ee52db3;
+const int MSG_OP_SIZE = 32;
+(slice, int) ~load_op(slice s) inline {
+    return s.load_uint(MSG_OP_SIZE);
+}
+(slice, ()) ~skip_op(slice s) inline {
+    return (s.skip_bits(MSG_OP_SIZE), ());
+}
+builder store_op(builder b, int op) inline {
+    return b.store_uint(op, MSG_OP_SIZE);
+}
+const int MSG_QUERY_ID_SIZE = 64;
+(slice, int) ~load_query_id(slice s) inline {
+    return s.load_uint(MSG_QUERY_ID_SIZE);
+}
+(slice, ()) ~skip_query_id(slice s) inline {
+    return (s.skip_bits(MSG_QUERY_ID_SIZE), ());
+}
+builder store_query_id(builder b, int query_id) inline {
+    return b.store_uint(query_id, MSG_QUERY_ID_SIZE);
+}
+const int MSG_CHANGE_SIZE = 8;
+(slice, int) ~load_change(slice s) inline {
+    return s.load_uint(MSG_CHANGE_SIZE);
+}
+(slice, ()) ~skip_change(slice s) inline {
+    return (s.skip_bits(MSG_CHANGE_SIZE), ());
+}
+builder store_change(builder b, int change) inline {
+    return b.store_uint(change, MSG_CHANGE_SIZE);
+}
+;; get_state#12f15 result:State = GetState;
+;; _ _:GetState = Gertter;
+(int, int) state() method_id(0x12f15) {
+    load_state();
+    return (id, counter);
+}
