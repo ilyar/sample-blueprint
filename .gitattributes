@@ -1,0 +1,6 @@
+# TON Ecosystem
+*.fc linguist-language=FunC
+*.tact linguist-language=Tact
+*.tbl linguist-language=TL-B
+*.tolk linguist-language=Tolk
+*.md linguist-language=Docs
