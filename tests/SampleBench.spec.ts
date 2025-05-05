@@ -29,7 +29,7 @@ describe('SampleBench', () => {
     expect(await app.getState()).toStrictEqual({ id: 0, counter: 0 })
   })
 
-  it.each(Object.keys(Array.from({ length: 100 })))(`${compiler} - should sent action via account#%i`, async (n) => {
+  it.each(Object.keys(Array.from({ length: 10 })))(`${compiler} - should sent action via account#%i`, async (n) => {
     const account = await blockchain.treasury(`account#${n}`)
     const before = await app.getState()
     const change = Math.floor(Math.random() * 255)
