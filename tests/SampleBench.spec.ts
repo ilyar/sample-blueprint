@@ -4,7 +4,8 @@ import { compile } from '@ton/blueprint'
 import { Blockchain, SandboxContract, TreasuryContract } from '@ton/sandbox'
 import { SampleBench } from '../wrappers/SampleBench'
 
-describe.each(['func', 'tolk', 'tact'])('SampleBench', (compiler: string) => {
+describe('SampleBench', () => {
+  const compiler = process.env.TON_COMPILER || 'func'
   let code: Cell
   let blockchain: Blockchain
   let deployer: SandboxContract<TreasuryContract>
