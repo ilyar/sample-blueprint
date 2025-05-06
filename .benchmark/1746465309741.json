@@ -1,6 +1,6 @@
 {
-  "comment": "tolk",
-  "createdAt": "2025-05-05T17:15:09.741Z",
+  "comment": "tolk v0.11.0",
+  "createdAt": "2025-05-06T19:55:23.755Z",
   "items": [
     {
       "address": "EQBGhqLAZseEqRXz4ByFPTGV7SVMlI4hrbs-Sps_Xzx01x8G",
@@ -21,6 +21,10 @@
         "resultCode": 0,
         "totalActionFees": 1,
         "totalFwdFees": 1169200
+      },
+      "outMessages": {
+        "cells": 11,
+        "bits": 1741
       },
       "state": {
         "cells": 9,
@@ -46,6 +50,10 @@
         "resultCode": 0,
         "totalActionFees": 0,
         "totalFwdFees": 0
+      },
+      "outMessages": {
+        "cells": 0,
+        "bits": 0
       },
       "state": {
         "cells": 9,
@@ -73,6 +81,10 @@
         "totalActionFees": 1,
         "totalFwdFees": 400000
       },
+      "outMessages": {
+        "cells": 2,
+        "bits": 816
+      },
       "state": {
         "cells": 9,
         "bits": 1023
@@ -98,6 +110,10 @@
         "resultCode": 0,
         "totalActionFees": 0,
         "totalFwdFees": 0
+      },
+      "outMessages": {
+        "cells": 0,
+        "bits": 0
       },
       "state": {
         "cells": 9,
@@ -125,6 +141,10 @@
         "totalActionFees": 1,
         "totalFwdFees": 400000
       },
+      "outMessages": {
+        "cells": 2,
+        "bits": 816
+      },
       "state": {
         "cells": 9,
         "bits": 1023
@@ -151,6 +171,10 @@
         "totalActionFees": 0,
         "totalFwdFees": 0
       },
+      "outMessages": {
+        "cells": 0,
+        "bits": 0
+      },
       "state": {
         "cells": 9,
         "bits": 1023
@@ -160,7 +184,7 @@
       "testName": "SampleBench tolk - should sent action via account#2",
       "address": "EQCRS6jnF3-jR3QFVjKnUkmRuK2_bh1jkPEgxsUZ-nhvDwWg",
       "contractName": "SampleBench",
-      "methodName": "sendIncrAction",
+      "methodName": "sendDecrAction",
       "opCode": 0,
       "computePhase": {
         "type": "vm",
@@ -177,6 +201,10 @@
         "totalActionFees": 1,
         "totalFwdFees": 400000
       },
+      "outMessages": {
+        "cells": 2,
+        "bits": 816
+      },
       "state": {
         "cells": 9,
         "bits": 1023
@@ -187,13 +215,13 @@
       "address": "EQDb7PATzmb3IOrm2OS3Exh3r3jtjvq79e5ThiKsp-iBdwIC",
       "contractName": "SampleBench",
       "methodName": null,
-      "opCode": 1230189672,
+      "opCode": 249900467,
       "computePhase": {
         "type": "vm",
         "success": true,
-        "gasUsed": 2743,
+        "gasUsed": 2820,
         "exitCode": 0,
-        "vmSteps": 60
+        "vmSteps": 64
       },
       "actionPhase": {
         "success": true,
@@ -202,6 +230,10 @@
         "resultCode": 0,
         "totalActionFees": 0,
         "totalFwdFees": 0
+      },
+      "outMessages": {
+        "cells": 0,
+        "bits": 0
       },
       "state": {
         "cells": 9,
@@ -229,6 +261,10 @@
         "totalActionFees": 1,
         "totalFwdFees": 400000
       },
+      "outMessages": {
+        "cells": 2,
+        "bits": 816
+      },
       "state": {
         "cells": 9,
         "bits": 1023
@@ -255,6 +291,10 @@
         "totalActionFees": 0,
         "totalFwdFees": 0
       },
+      "outMessages": {
+        "cells": 0,
+        "bits": 0
+      },
       "state": {
         "cells": 9,
         "bits": 1023
@@ -264,7 +304,7 @@
       "testName": "SampleBench tolk - should sent action via account#4",
       "address": "EQCqDo-HXAF163oraxcFbWJ2Nth0mKDhRh2PUCxu2CbzIaa1",
       "contractName": "SampleBench",
-      "methodName": "sendIncrAction",
+      "methodName": "sendDecrAction",
       "opCode": 0,
       "computePhase": {
         "type": "vm",
@@ -281,6 +321,10 @@
         "totalActionFees": 1,
         "totalFwdFees": 400000
       },
+      "outMessages": {
+        "cells": 2,
+        "bits": 816
+      },
       "state": {
         "cells": 9,
         "bits": 1023
@@ -291,13 +335,13 @@
       "address": "EQDb7PATzmb3IOrm2OS3Exh3r3jtjvq79e5ThiKsp-iBdwIC",
       "contractName": "SampleBench",
       "methodName": null,
-      "opCode": 1230189672,
+      "opCode": 249900467,
       "computePhase": {
         "type": "vm",
         "success": true,
-        "gasUsed": 2743,
+        "gasUsed": 2820,
         "exitCode": 0,
-        "vmSteps": 60
+        "vmSteps": 64
       },
       "actionPhase": {
         "success": true,
@@ -306,6 +350,10 @@
         "resultCode": 0,
         "totalActionFees": 0,
         "totalFwdFees": 0
+      },
+      "outMessages": {
+        "cells": 0,
+        "bits": 0
       },
       "state": {
         "cells": 9,
@@ -316,7 +364,7 @@
       "testName": "SampleBench tolk - should sent action via account#5",
       "address": "EQCnP7hLjGmqk2e5Qv2zRbRui3EI0uHdMZEoA4815tNTSil0",
       "contractName": "SampleBench",
-      "methodName": "sendIncrAction",
+      "methodName": "sendDecrAction",
       "opCode": 0,
       "computePhase": {
         "type": "vm",
@@ -332,6 +380,10 @@
         "resultCode": 0,
         "totalActionFees": 1,
         "totalFwdFees": 400000
+      },
+      "outMessages": {
+        "cells": 2,
+        "bits": 816
       },
       "state": {
         "cells": 9,
@@ -343,13 +395,13 @@
       "address": "EQDb7PATzmb3IOrm2OS3Exh3r3jtjvq79e5ThiKsp-iBdwIC",
       "contractName": "SampleBench",
       "methodName": null,
-      "opCode": 1230189672,
+      "opCode": 249900467,
       "computePhase": {
         "type": "vm",
         "success": true,
-        "gasUsed": 2743,
+        "gasUsed": 2820,
         "exitCode": 0,
-        "vmSteps": 60
+        "vmSteps": 64
       },
       "actionPhase": {
         "success": true,
@@ -359,6 +411,10 @@
         "totalActionFees": 0,
         "totalFwdFees": 0
       },
+      "outMessages": {
+        "cells": 0,
+        "bits": 0
+      },
       "state": {
         "cells": 9,
         "bits": 1023
@@ -367,6 +423,66 @@
     {
       "testName": "SampleBench tolk - should sent action via account#6",
       "address": "EQDSBp3sajDVngt_HGwzc8tzGCgLt2E9CBBjDRFBb4eSc6NQ",
+      "contractName": "SampleBench",
+      "methodName": "sendDecrAction",
+      "opCode": 0,
+      "computePhase": {
+        "type": "vm",
+        "success": true,
+        "gasUsed": 1937,
+        "exitCode": 0,
+        "vmSteps": 50
+      },
+      "actionPhase": {
+        "success": true,
+        "totalActions": 1,
+        "skippedActions": 0,
+        "resultCode": 0,
+        "totalActionFees": 1,
+        "totalFwdFees": 400000
+      },
+      "outMessages": {
+        "cells": 2,
+        "bits": 816
+      },
+      "state": {
+        "cells": 9,
+        "bits": 1023
+      }
+    },
+    {
+      "testName": "SampleBench tolk - should sent action via account#6",
+      "address": "EQDb7PATzmb3IOrm2OS3Exh3r3jtjvq79e5ThiKsp-iBdwIC",
+      "contractName": "SampleBench",
+      "methodName": null,
+      "opCode": 249900467,
+      "computePhase": {
+        "type": "vm",
+        "success": true,
+        "gasUsed": 2820,
+        "exitCode": 0,
+        "vmSteps": 64
+      },
+      "actionPhase": {
+        "success": true,
+        "totalActions": 0,
+        "skippedActions": 0,
+        "resultCode": 0,
+        "totalActionFees": 0,
+        "totalFwdFees": 0
+      },
+      "outMessages": {
+        "cells": 0,
+        "bits": 0
+      },
+      "state": {
+        "cells": 9,
+        "bits": 1023
+      }
+    },
+    {
+      "testName": "SampleBench tolk - should sent action via account#7",
+      "address": "EQDN4kZ4if_INZA6lYu-silnxC0zQavHGK0DM_cVYcLPuru_",
       "contractName": "SampleBench",
       "methodName": "sendIncrAction",
       "opCode": 0,
@@ -385,13 +501,17 @@
         "totalActionFees": 1,
         "totalFwdFees": 400000
       },
+      "outMessages": {
+        "cells": 2,
+        "bits": 816
+      },
       "state": {
         "cells": 9,
         "bits": 1023
       }
     },
     {
-      "testName": "SampleBench tolk - should sent action via account#6",
+      "testName": "SampleBench tolk - should sent action via account#7",
       "address": "EQDb7PATzmb3IOrm2OS3Exh3r3jtjvq79e5ThiKsp-iBdwIC",
       "contractName": "SampleBench",
       "methodName": null,
@@ -411,57 +531,9 @@
         "totalActionFees": 0,
         "totalFwdFees": 0
       },
-      "state": {
-        "cells": 9,
-        "bits": 1023
-      }
-    },
-    {
-      "testName": "SampleBench tolk - should sent action via account#7",
-      "address": "EQDN4kZ4if_INZA6lYu-silnxC0zQavHGK0DM_cVYcLPuru_",
-      "contractName": "SampleBench",
-      "methodName": "sendDecrAction",
-      "opCode": 0,
-      "computePhase": {
-        "type": "vm",
-        "success": true,
-        "gasUsed": 1937,
-        "exitCode": 0,
-        "vmSteps": 50
-      },
-      "actionPhase": {
-        "success": true,
-        "totalActions": 1,
-        "skippedActions": 0,
-        "resultCode": 0,
-        "totalActionFees": 1,
-        "totalFwdFees": 400000
-      },
-      "state": {
-        "cells": 9,
-        "bits": 1023
-      }
-    },
-    {
-      "testName": "SampleBench tolk - should sent action via account#7",
-      "address": "EQDb7PATzmb3IOrm2OS3Exh3r3jtjvq79e5ThiKsp-iBdwIC",
-      "contractName": "SampleBench",
-      "methodName": null,
-      "opCode": 249900467,
-      "computePhase": {
-        "type": "vm",
-        "success": true,
-        "gasUsed": 2820,
-        "exitCode": 0,
-        "vmSteps": 64
-      },
-      "actionPhase": {
-        "success": true,
-        "totalActions": 0,
-        "skippedActions": 0,
-        "resultCode": 0,
-        "totalActionFees": 0,
-        "totalFwdFees": 0
+      "outMessages": {
+        "cells": 0,
+        "bits": 0
       },
       "state": {
         "cells": 9,
@@ -472,7 +544,7 @@
       "testName": "SampleBench tolk - should sent action via account#8",
       "address": "EQB5r-BkWgVY-Wo2FGnAYlwqbqX1obcNv6W-sUHYqlpfS0Kg",
       "contractName": "SampleBench",
-      "methodName": "sendDecrAction",
+      "methodName": "sendIncrAction",
       "opCode": 0,
       "computePhase": {
         "type": "vm",
@@ -489,6 +561,10 @@
         "totalActionFees": 1,
         "totalFwdFees": 400000
       },
+      "outMessages": {
+        "cells": 2,
+        "bits": 816
+      },
       "state": {
         "cells": 9,
         "bits": 1023
@@ -499,13 +575,13 @@
       "address": "EQDb7PATzmb3IOrm2OS3Exh3r3jtjvq79e5ThiKsp-iBdwIC",
       "contractName": "SampleBench",
       "methodName": null,
-      "opCode": 249900467,
+      "opCode": 1230189672,
       "computePhase": {
         "type": "vm",
         "success": true,
-        "gasUsed": 2820,
+        "gasUsed": 2743,
         "exitCode": 0,
-        "vmSteps": 64
+        "vmSteps": 60
       },
       "actionPhase": {
         "success": true,
@@ -514,6 +590,10 @@
         "resultCode": 0,
         "totalActionFees": 0,
         "totalFwdFees": 0
+      },
+      "outMessages": {
+        "cells": 0,
+        "bits": 0
       },
       "state": {
         "cells": 9,
@@ -541,6 +621,10 @@
         "totalActionFees": 1,
         "totalFwdFees": 400000
       },
+      "outMessages": {
+        "cells": 2,
+        "bits": 816
+      },
       "state": {
         "cells": 9,
         "bits": 1023
@@ -566,6 +650,10 @@
         "resultCode": 0,
         "totalActionFees": 0,
         "totalFwdFees": 0
+      },
+      "outMessages": {
+        "cells": 0,
+        "bits": 0
       },
       "state": {
         "cells": 9,
