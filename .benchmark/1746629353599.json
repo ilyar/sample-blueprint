@@ -1,6 +1,6 @@
 {
   "comment": "tolk v0.11.0",
-  "createdAt": "2025-05-07T14:49:13.599Z",
+  "createdAt": "2025-05-07T14:50:44.304Z",
   "items": [
     {
       "address": "EQBGhqLAZseEqRXz4ByFPTGV7SVMlI4hrbs-Sps_Xzx01x8G",
@@ -125,7 +125,8 @@
       "state": {
         "cells": 9,
         "bits": 1023
-      }
+      },
+      "methodName": "Incr"
     },
     {
       "testName": "SampleBench tolk - should sent sendDecrAction",
@@ -188,7 +189,8 @@
       "state": {
         "cells": 9,
         "bits": 1023
-      }
+      },
+      "methodName": "Decr"
     }
   ]
 }

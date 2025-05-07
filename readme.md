@@ -32,6 +32,7 @@ const config: Config = {
     reporters: [
         'default',
         ['@ton/sandbox/jest-reporter', {
+            contractDatabase: 'abi.json',
             reportName: '.benchmark',
             mode: 'onlyMetric',
             contractExcludes: [

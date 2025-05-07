@@ -1,6 +1,6 @@
 {
   "comment": "func v0.4.6",
-  "createdAt": "2025-05-07T14:48:58.672Z",
+  "createdAt": "2025-05-07T14:50:29.902Z",
   "items": [
     {
       "address": "EQBGhqLAZseEqRXz4ByFPTGV7SVMlI4hrbs-Sps_Xzx01x8G",
@@ -125,7 +125,8 @@
       "state": {
         "cells": 9,
         "bits": 1094
-      }
+      },
+      "methodName": "Incr"
     },
     {
       "testName": "SampleBench func - should sent sendDecrAction",
@@ -188,7 +189,8 @@
       "state": {
         "cells": 9,
         "bits": 1094
-      }
+      },
+      "methodName": "Decr"
     }
   ]
 }

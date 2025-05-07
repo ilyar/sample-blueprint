@@ -1,6 +1,6 @@
 {
   "comment": "tact v1.6.7",
-  "createdAt": "2025-05-07T14:49:06.560Z",
+  "createdAt": "2025-05-07T14:50:37.390Z",
   "items": [
     {
       "address": "EQBGhqLAZseEqRXz4ByFPTGV7SVMlI4hrbs-Sps_Xzx01x8G",
@@ -125,7 +125,8 @@
       "state": {
         "cells": 6,
         "bits": 1410
-      }
+      },
+      "methodName": "Incr"
     },
     {
       "testName": "SampleBench tact - should sent sendDecrAction",
@@ -188,7 +189,8 @@
       "state": {
         "cells": 6,
         "bits": 1410
-      }
+      },
+      "methodName": "Decr"
     }
   ]
 }
