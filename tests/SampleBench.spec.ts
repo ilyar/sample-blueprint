@@ -9,6 +9,7 @@ describe('SampleBench', () => {
   let code: Cell
   let blockchain: Blockchain
   let deployer: SandboxContract<TreasuryContract>
+  let user: SandboxContract<TreasuryContract>
   let app: SandboxContract<SampleBench>
 
   beforeAll(async () => {
@@ -16,6 +17,7 @@ describe('SampleBench', () => {
     blockchain = await Blockchain.create()
     app = blockchain.openContract(SampleBench.createFromConfig(code))
     deployer = await blockchain.treasury('deployer')
+    user = await blockchain.treasury('user')
     const out = await app.sendDeploy(deployer.getSender(), toNano('0.05'))
     expect(out.transactions).toHaveTransaction({
       from: deployer.address,
@@ -29,27 +31,41 @@ describe('SampleBench', () => {
     expect(await app.getState()).toStrictEqual({ id: 0, counter: 0 })
   })
 
-  it.each(Object.keys(Array.from({ length: 10 })))(`${compiler} - should sent action via account#%i`, async (n) => {
-    const account = await blockchain.treasury(`account#${n}`)
+  it(`${compiler} - should sent incrAction`, async () => {
     const before = await app.getState()
     const change = Math.floor(Math.random() * 255)
-    const { action, expected } =
-      Math.floor(Math.random() * 10) > 5
-        ? { action: app.sendIncrAction, expected: before.counter + change }
-        : { action: app.sendDecrAction, expected: before.counter - change }
-    const out = await action(
-      account.getSender(),
+    const result = await app.sendIncrAction(
+      user.getSender(),
       {
         change,
       },
       toNano('0.05'),
     )
-    expect(out.transactions).toHaveTransaction({
-      from: account.address,
+    expect(result.transactions).toHaveTransaction({
+      from: user.address,
       to: app.address,
       success: true,
     })
     const after = await app.getState()
-    expect(after.counter).toBe(expected)
+    expect(after.counter).toBe(before.counter + change)
+  })
+
+  it(`${compiler} - should sent sendDecrAction`, async () => {
+    const before = await app.getState()
+    const change = Math.floor(Math.random() * 255)
+    const result = await app.sendDecrAction(
+      user.getSender(),
+      {
+        change,
+      },
+      toNano('0.05'),
+    )
+    expect(result.transactions).toHaveTransaction({
+      from: user.address,
+      to: app.address,
+      success: true,
+    })
+    const after = await app.getState()
+    expect(after.counter).toBe(before.counter - change)
   })
 })

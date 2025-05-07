@@ -5,6 +5,10 @@
     "license": "AGPL-3.0-only",
     "author": "Ilyar (https://github.com/ilyar)",
     "scripts": {
+        "metric-tact": "TON_COMPILER=tact npx blueprint metric -c 'tact v1.6.7'",
+        "metric-func": "TON_COMPILER=func npx blueprint metric -c 'func v0.4.6'",
+        "metric-tolk": "TON_COMPILER=tolk npx blueprint metric -c 'tolk v0.11.0'",
+        "metric": "pnpm metric-func && pnpm metric-tact && pnpm metric-tolk",
         "start-deeplink": "blueprint run --testnet --deeplink",
         "start-tonconnect": "blueprint run --testnet --tonconnect",
         "start-mnemonic": "blueprint run --testnet --mnemonic",

@@ -1,0 +1,194 @@
+{
+  "comment": "func v0.4.6",
+  "createdAt": "2025-05-07T14:48:58.672Z",
+  "items": [
+    {
+      "address": "EQBGhqLAZseEqRXz4ByFPTGV7SVMlI4hrbs-Sps_Xzx01x8G",
+      "codeHash": "0xe343c2e736d55d9839b3d88af00f32a7fcf7036e95ca70654366a1f5f9a41b06",
+      "contractName": "SampleBench",
+      "methodName": "sendDeploy",
+      "receiver": "external-in",
+      "opCode": "0x0",
+      "computePhase": {
+        "type": "vm",
+        "success": true,
+        "gasUsed": 1937,
+        "exitCode": 0,
+        "vmSteps": 50
+      },
+      "actionPhase": {
+        "success": true,
+        "totalActions": 1,
+        "skippedActions": 0,
+        "resultCode": 0,
+        "totalActionFees": 1,
+        "totalFwdFees": 1197600
+      },
+      "outMessages": {
+        "cells": 11,
+        "bits": 1812
+      },
+      "state": {
+        "cells": 9,
+        "bits": 1094
+      }
+    },
+    {
+      "address": "EQDws8c1s3DyvEYFgTpWFcmz4dI8B8SVQcvqgQ3mVZVBN_Tl",
+      "codeHash": "0xe343c2e736d55d9839b3d88af00f32a7fcf7036e95ca70654366a1f5f9a41b06",
+      "contractName": "SampleBench",
+      "methodName": "send",
+      "receiver": "internal",
+      "opCode": "0x0",
+      "computePhase": {
+        "type": "vm",
+        "success": true,
+        "gasUsed": 641,
+        "exitCode": 0,
+        "vmSteps": 11
+      },
+      "actionPhase": {
+        "success": true,
+        "totalActions": 0,
+        "skippedActions": 0,
+        "resultCode": 0,
+        "totalActionFees": 0,
+        "totalFwdFees": 0
+      },
+      "outMessages": {
+        "cells": 0,
+        "bits": 0
+      },
+      "state": {
+        "cells": 9,
+        "bits": 1094
+      }
+    },
+    {
+      "testName": "SampleBench func - should sent incrAction",
+      "address": "EQABEq658dLg1KxPhXZxj0vapZMNYevotqeINH786lpwwSnT",
+      "codeHash": "0xe343c2e736d55d9839b3d88af00f32a7fcf7036e95ca70654366a1f5f9a41b06",
+      "contractName": "SampleBench",
+      "methodName": "sendIncrAction",
+      "receiver": "external-in",
+      "opCode": "0x0",
+      "computePhase": {
+        "type": "vm",
+        "success": true,
+        "gasUsed": 1937,
+        "exitCode": 0,
+        "vmSteps": 50
+      },
+      "actionPhase": {
+        "success": true,
+        "totalActions": 1,
+        "skippedActions": 0,
+        "resultCode": 0,
+        "totalActionFees": 1,
+        "totalFwdFees": 400000
+      },
+      "outMessages": {
+        "cells": 2,
+        "bits": 816
+      },
+      "state": {
+        "cells": 9,
+        "bits": 1094
+      }
+    },
+    {
+      "testName": "SampleBench func - should sent incrAction",
+      "address": "EQDws8c1s3DyvEYFgTpWFcmz4dI8B8SVQcvqgQ3mVZVBN_Tl",
+      "codeHash": "0xe343c2e736d55d9839b3d88af00f32a7fcf7036e95ca70654366a1f5f9a41b06",
+      "contractName": "SampleBench",
+      "receiver": "internal",
+      "opCode": "0x49533468",
+      "computePhase": {
+        "type": "vm",
+        "success": true,
+        "gasUsed": 2823,
+        "exitCode": 0,
+        "vmSteps": 64
+      },
+      "actionPhase": {
+        "success": true,
+        "totalActions": 0,
+        "skippedActions": 0,
+        "resultCode": 0,
+        "totalActionFees": 0,
+        "totalFwdFees": 0
+      },
+      "outMessages": {
+        "cells": 0,
+        "bits": 0
+      },
+      "state": {
+        "cells": 9,
+        "bits": 1094
+      }
+    },
+    {
+      "testName": "SampleBench func - should sent sendDecrAction",
+      "address": "EQABEq658dLg1KxPhXZxj0vapZMNYevotqeINH786lpwwSnT",
+      "codeHash": "0xe343c2e736d55d9839b3d88af00f32a7fcf7036e95ca70654366a1f5f9a41b06",
+      "contractName": "SampleBench",
+      "methodName": "sendDecrAction",
+      "receiver": "external-in",
+      "opCode": "0x0",
+      "computePhase": {
+        "type": "vm",
+        "success": true,
+        "gasUsed": 1937,
+        "exitCode": 0,
+        "vmSteps": 50
+      },
+      "actionPhase": {
+        "success": true,
+        "totalActions": 1,
+        "skippedActions": 0,
+        "resultCode": 0,
+        "totalActionFees": 1,
+        "totalFwdFees": 400000
+      },
+      "outMessages": {
+        "cells": 2,
+        "bits": 816
+      },
+      "state": {
+        "cells": 9,
+        "bits": 1094
+      }
+    },
+    {
+      "testName": "SampleBench func - should sent sendDecrAction",
+      "address": "EQDws8c1s3DyvEYFgTpWFcmz4dI8B8SVQcvqgQ3mVZVBN_Tl",
+      "codeHash": "0xe343c2e736d55d9839b3d88af00f32a7fcf7036e95ca70654366a1f5f9a41b06",
+      "contractName": "SampleBench",
+      "receiver": "internal",
+      "opCode": "0xee52db3",
+      "computePhase": {
+        "type": "vm",
+        "success": true,
+        "gasUsed": 2921,
+        "exitCode": 0,
+        "vmSteps": 68
+      },
+      "actionPhase": {
+        "success": true,
+        "totalActions": 0,
+        "skippedActions": 0,
+        "resultCode": 0,
+        "totalActionFees": 0,
+        "totalFwdFees": 0
+      },
+      "outMessages": {
+        "cells": 0,
+        "bits": 0
+      },
+      "state": {
+        "cells": 9,
+        "bits": 1094
+      }
+    }
+  ]
+}
