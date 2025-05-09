@@ -48,9 +48,16 @@ export default config;
 **Run tests and collect metric:**
 
 ```bash
-TON_COMPILER=tact npx blueprint metric -c "tact v1.6.7"
-TON_COMPILER=func npx blueprint metric -c "func v0.4.6"
-TON_COMPILER=tolk npx blueprint metric -c "tolk v0.11.0"
+TON_COMPILER=tact npx blueprint snapshot -l "tact v1.6.7"
+TON_COMPILER=func npx blueprint snapshot -l "func v0.9.1"
+# or
+for v in 0.{6..11}.0; do pnpm add -D "@ton/tolk-js@$v" && npx blueprint snapshot -l "tolk v$v"; done
+```
+
+**Get benchmark:**
+
+```bash
+npx blueprint test --gas-report
 ```
 
 🧙🏻‍♂️ See result [.benchmark](.benchmark)

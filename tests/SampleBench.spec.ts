@@ -5,7 +5,7 @@ import { Blockchain, SandboxContract, TreasuryContract } from '@ton/sandbox'
 import { SampleBench } from '../wrappers/SampleBench'
 
 describe('SampleBench', () => {
-  const compiler = process.env.TON_COMPILER || 'func'
+  const compiler = process.env.TON_COMPILER || 'tolk'
   let code: Cell
   let blockchain: Blockchain
   let deployer: SandboxContract<TreasuryContract>

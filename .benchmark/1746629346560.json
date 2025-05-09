@@ -1,6 +1,6 @@
 {
-  "comment": "tact v1.6.7",
-  "createdAt": "2025-05-07T18:44:01.354Z",
+  "label": "tact v1.6.7",
+  "createdAt": "2025-05-09T13:01:16.782Z",
   "items": [
     {
       "address": "EQBGhqLAZseEqRXz4ByFPTGV7SVMlI4hrbs-Sps_Xzx01x8G",
@@ -24,13 +24,23 @@
         "totalActionFees": 1,
         "totalFwdFees": 1204000
       },
+      "inMessages": {
+        "cells": 9,
+        "bits": 2382
+      },
       "outMessages": {
         "cells": 8,
         "bits": 2128
       },
       "state": {
-        "cells": 6,
-        "bits": 1410
+        "code": {
+          "cells": 5,
+          "bits": 1346
+        },
+        "data": {
+          "cells": 1,
+          "bits": 64
+        }
       }
     },
     {
@@ -55,13 +65,23 @@
         "totalActionFees": 0,
         "totalFwdFees": 0
       },
+      "inMessages": {
+        "cells": 7,
+        "bits": 2121
+      },
       "outMessages": {
         "cells": 0,
         "bits": 0
       },
       "state": {
-        "cells": 6,
-        "bits": 1410
+        "code": {
+          "cells": 5,
+          "bits": 1346
+        },
+        "data": {
+          "cells": 1,
+          "bits": 64
+        }
       }
     },
     {
@@ -87,13 +107,23 @@
         "totalActionFees": 1,
         "totalFwdFees": 400000
       },
+      "inMessages": {
+        "cells": 3,
+        "bits": 1070
+      },
       "outMessages": {
         "cells": 2,
         "bits": 816
       },
       "state": {
-        "cells": 6,
-        "bits": 1410
+        "code": {
+          "cells": 5,
+          "bits": 1346
+        },
+        "data": {
+          "cells": 1,
+          "bits": 64
+        }
       }
     },
     {
@@ -118,13 +148,23 @@
         "totalActionFees": 0,
         "totalFwdFees": 0
       },
+      "inMessages": {
+        "cells": 1,
+        "bits": 809
+      },
       "outMessages": {
         "cells": 0,
         "bits": 0
       },
       "state": {
-        "cells": 6,
-        "bits": 1410
+        "code": {
+          "cells": 5,
+          "bits": 1346
+        },
+        "data": {
+          "cells": 1,
+          "bits": 64
+        }
       },
       "methodName": "Incr"
     },
@@ -151,13 +191,23 @@
         "totalActionFees": 1,
         "totalFwdFees": 400000
       },
+      "inMessages": {
+        "cells": 3,
+        "bits": 1070
+      },
       "outMessages": {
         "cells": 2,
         "bits": 816
       },
       "state": {
-        "cells": 6,
-        "bits": 1410
+        "code": {
+          "cells": 5,
+          "bits": 1346
+        },
+        "data": {
+          "cells": 1,
+          "bits": 64
+        }
       }
     },
     {
@@ -182,13 +232,23 @@
         "totalActionFees": 0,
         "totalFwdFees": 0
       },
+      "inMessages": {
+        "cells": 1,
+        "bits": 809
+      },
       "outMessages": {
         "cells": 0,
         "bits": 0
       },
       "state": {
-        "cells": 6,
-        "bits": 1410
+        "code": {
+          "cells": 5,
+          "bits": 1346
+        },
+        "data": {
+          "cells": 1,
+          "bits": 64
+        }
       },
       "methodName": "Decr"
     }

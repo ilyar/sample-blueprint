@@ -1,10 +1,10 @@
 {
-  "label": "tolk v0.6.0",
-  "createdAt": "2025-05-09T13:01:37.032Z",
+  "label": "tolk v0.11.0",
+  "createdAt": "2025-05-09T13:02:15.919Z",
   "items": [
     {
       "address": "EQBGhqLAZseEqRXz4ByFPTGV7SVMlI4hrbs-Sps_Xzx01x8G",
-      "codeHash": "0x5fc55c8d22a55f374ec0042a51d150c8fc3570025c7cea2abfb87d45deb2f0e8",
+      "codeHash": "0x782efbe3126d142429d8e9623c2203f547a64e760ecfcd8f13bea0a4c2837183",
       "contractName": "SampleBench",
       "methodName": "sendDeploy",
       "receiver": "external-in",
@@ -22,20 +22,20 @@
         "skippedActions": 0,
         "resultCode": 0,
         "totalActionFees": 1,
-        "totalFwdFees": 1188400
+        "totalFwdFees": 1169200
       },
       "inMessages": {
         "cells": 12,
-        "bits": 2043
+        "bits": 1995
       },
       "outMessages": {
         "cells": 11,
-        "bits": 1789
+        "bits": 1741
       },
       "state": {
         "code": {
           "cells": 8,
-          "bits": 1007
+          "bits": 959
         },
         "data": {
           "cells": 1,
@@ -44,8 +44,8 @@
       }
     },
     {
-      "address": "EQDGEWjgHrhKsOGg2cTKHsALxSnelaY76gbs2pGSkaigKU-I",
-      "codeHash": "0x5fc55c8d22a55f374ec0042a51d150c8fc3570025c7cea2abfb87d45deb2f0e8",
+      "address": "EQDb7PATzmb3IOrm2OS3Exh3r3jtjvq79e5ThiKsp-iBdwIC",
+      "codeHash": "0x782efbe3126d142429d8e9623c2203f547a64e760ecfcd8f13bea0a4c2837183",
       "contractName": "SampleBench",
       "methodName": "send",
       "receiver": "internal",
@@ -53,9 +53,9 @@
       "computePhase": {
         "type": "vm",
         "success": true,
-        "gasUsed": 641,
+        "gasUsed": 589,
         "exitCode": 0,
-        "vmSteps": 11
+        "vmSteps": 9
       },
       "actionPhase": {
         "success": true,
@@ -67,7 +67,7 @@
       },
       "inMessages": {
         "cells": 10,
-        "bits": 1782
+        "bits": 1734
       },
       "outMessages": {
         "cells": 0,
@@ -76,7 +76,7 @@
       "state": {
         "code": {
           "cells": 8,
-          "bits": 1007
+          "bits": 959
         },
         "data": {
           "cells": 1,
@@ -87,7 +87,7 @@
     {
       "testName": "SampleBench tolk - should sent incrAction",
       "address": "EQABEq658dLg1KxPhXZxj0vapZMNYevotqeINH786lpwwSnT",
-      "codeHash": "0x5fc55c8d22a55f374ec0042a51d150c8fc3570025c7cea2abfb87d45deb2f0e8",
+      "codeHash": "0x782efbe3126d142429d8e9623c2203f547a64e760ecfcd8f13bea0a4c2837183",
       "contractName": "SampleBench",
       "methodName": "sendIncrAction",
       "receiver": "external-in",
@@ -118,7 +118,7 @@
       "state": {
         "code": {
           "cells": 8,
-          "bits": 1007
+          "bits": 959
         },
         "data": {
           "cells": 1,
@@ -128,17 +128,17 @@
     },
     {
       "testName": "SampleBench tolk - should sent incrAction",
-      "address": "EQDGEWjgHrhKsOGg2cTKHsALxSnelaY76gbs2pGSkaigKU-I",
-      "codeHash": "0x5fc55c8d22a55f374ec0042a51d150c8fc3570025c7cea2abfb87d45deb2f0e8",
+      "address": "EQDb7PATzmb3IOrm2OS3Exh3r3jtjvq79e5ThiKsp-iBdwIC",
+      "codeHash": "0x782efbe3126d142429d8e9623c2203f547a64e760ecfcd8f13bea0a4c2837183",
       "contractName": "SampleBench",
       "receiver": "internal",
       "opCode": "0x49533468",
       "computePhase": {
         "type": "vm",
         "success": true,
-        "gasUsed": 2787,
+        "gasUsed": 2743,
         "exitCode": 0,
-        "vmSteps": 62
+        "vmSteps": 60
       },
       "actionPhase": {
         "success": true,
@@ -159,18 +159,19 @@
       "state": {
         "code": {
           "cells": 8,
-          "bits": 1007
+          "bits": 959
         },
         "data": {
           "cells": 1,
           "bits": 64
         }
-      }
+      },
+      "methodName": "Incr"
     },
     {
       "testName": "SampleBench tolk - should sent sendDecrAction",
       "address": "EQABEq658dLg1KxPhXZxj0vapZMNYevotqeINH786lpwwSnT",
-      "codeHash": "0x5fc55c8d22a55f374ec0042a51d150c8fc3570025c7cea2abfb87d45deb2f0e8",
+      "codeHash": "0x782efbe3126d142429d8e9623c2203f547a64e760ecfcd8f13bea0a4c2837183",
       "contractName": "SampleBench",
       "methodName": "sendDecrAction",
       "receiver": "external-in",
@@ -201,7 +202,7 @@
       "state": {
         "code": {
           "cells": 8,
-          "bits": 1007
+          "bits": 959
         },
         "data": {
           "cells": 1,
@@ -211,17 +212,17 @@
     },
     {
       "testName": "SampleBench tolk - should sent sendDecrAction",
-      "address": "EQDGEWjgHrhKsOGg2cTKHsALxSnelaY76gbs2pGSkaigKU-I",
-      "codeHash": "0x5fc55c8d22a55f374ec0042a51d150c8fc3570025c7cea2abfb87d45deb2f0e8",
+      "address": "EQDb7PATzmb3IOrm2OS3Exh3r3jtjvq79e5ThiKsp-iBdwIC",
+      "codeHash": "0x782efbe3126d142429d8e9623c2203f547a64e760ecfcd8f13bea0a4c2837183",
       "contractName": "SampleBench",
       "receiver": "internal",
       "opCode": "0xee52db3",
       "computePhase": {
         "type": "vm",
         "success": true,
-        "gasUsed": 2885,
+        "gasUsed": 2820,
         "exitCode": 0,
-        "vmSteps": 66
+        "vmSteps": 64
       },
       "actionPhase": {
         "success": true,
@@ -242,13 +243,14 @@
       "state": {
         "code": {
           "cells": 8,
-          "bits": 1007
+          "bits": 959
         },
         "data": {
           "cells": 1,
           "bits": 64
         }
-      }
+      },
+      "methodName": "Decr"
     }
   ]
 }

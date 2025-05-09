@@ -9,10 +9,10 @@ importers:
   .:
     devDependencies:
       '@tact-lang/compiler':
-        specifier: ^1.6.7
+        specifier: 1.6.7
         version: 1.6.7
       '@ton-community/func-js':
-        specifier: '>=0.9.1'
+        specifier: 0.9.1
         version: 0.9.1
       '@ton-community/tlb-codegen':
         specifier: ^2.0.0-beta.0
@@ -33,7 +33,7 @@ importers:
         specifier: '>=0.5.0'
         version: 0.5.0(@jest/globals@29.7.0)(@ton/core@0.60.1(@ton/crypto@3.3.0))
       '@ton/tolk-js':
-        specifier: '>=0.11.0'
+        specifier: 0.11.0
         version: 0.11.0
       '@ton/ton':
         specifier: '>=15.2.1 <16.0.0'
