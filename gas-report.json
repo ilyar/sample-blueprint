@@ -1,0 +1,186 @@
+[
+  {
+    "label": "v1",
+    "createdAt": "2025-05-12T18:08:36.625Z",
+    "result": {
+      "SampleBench": {
+        "sendDeploy": {
+          "gasUsed": {
+            "kind": "same",
+            "value": "1937"
+          },
+          "cells": {
+            "kind": "same",
+            "value": "9"
+          },
+          "bits": {
+            "kind": "same",
+            "value": "1071"
+          }
+        },
+        "send": {
+          "gasUsed": {
+            "kind": "same",
+            "value": "641"
+          },
+          "cells": {
+            "kind": "same",
+            "value": "9"
+          },
+          "bits": {
+            "kind": "same",
+            "value": "1071"
+          }
+        },
+        "sendIncrAction": {
+          "gasUsed": {
+            "kind": "same",
+            "value": "1937"
+          },
+          "cells": {
+            "kind": "same",
+            "value": "9"
+          },
+          "bits": {
+            "kind": "same",
+            "value": "1071"
+          }
+        },
+        "Incr": {
+          "gasUsed": {
+            "kind": "same",
+            "value": "2787"
+          },
+          "cells": {
+            "kind": "same",
+            "value": "9"
+          },
+          "bits": {
+            "kind": "same",
+            "value": "1071"
+          }
+        },
+        "sendDecrAction": {
+          "gasUsed": {
+            "kind": "same",
+            "value": "1937"
+          },
+          "cells": {
+            "kind": "same",
+            "value": "9"
+          },
+          "bits": {
+            "kind": "same",
+            "value": "1071"
+          }
+        },
+        "Decr": {
+          "gasUsed": {
+            "kind": "same",
+            "value": "2885"
+          },
+          "cells": {
+            "kind": "same",
+            "value": "9"
+          },
+          "bits": {
+            "kind": "same",
+            "value": "1071"
+          }
+        }
+      }
+    }
+  },
+  {
+    "label": "current",
+    "createdAt": "2025-05-13T17:44:06.153Z",
+    "result": {
+      "SampleBench": {
+        "sendDeploy": {
+          "gasUsed": {
+            "kind": "same",
+            "value": "1937 same"
+          },
+          "cells": {
+            "kind": "same",
+            "value": "9 same"
+          },
+          "bits": {
+            "kind": "decrease",
+            "value": "1023 -4.48%"
+          }
+        },
+        "send": {
+          "gasUsed": {
+            "kind": "decrease",
+            "value": "589 -8.11%"
+          },
+          "cells": {
+            "kind": "same",
+            "value": "9 same"
+          },
+          "bits": {
+            "kind": "decrease",
+            "value": "1023 -4.48%"
+          }
+        },
+        "sendIncrAction": {
+          "gasUsed": {
+            "kind": "same",
+            "value": "1937 same"
+          },
+          "cells": {
+            "kind": "same",
+            "value": "9 same"
+          },
+          "bits": {
+            "kind": "decrease",
+            "value": "1023 -4.48%"
+          }
+        },
+        "Incr": {
+          "gasUsed": {
+            "kind": "decrease",
+            "value": "2743 -1.58%"
+          },
+          "cells": {
+            "kind": "same",
+            "value": "9 same"
+          },
+          "bits": {
+            "kind": "decrease",
+            "value": "1023 -4.48%"
+          }
+        },
+        "sendDecrAction": {
+          "gasUsed": {
+            "kind": "same",
+            "value": "1937 same"
+          },
+          "cells": {
+            "kind": "same",
+            "value": "9 same"
+          },
+          "bits": {
+            "kind": "decrease",
+            "value": "1023 -4.48%"
+          }
+        },
+        "Decr": {
+          "gasUsed": {
+            "kind": "decrease",
+            "value": "2820 -2.25%"
+          },
+          "cells": {
+            "kind": "same",
+            "value": "9 same"
+          },
+          "bits": {
+            "kind": "decrease",
+            "value": "1023 -4.48%"
+          }
+        }
+      }
+    }
+  }
+]

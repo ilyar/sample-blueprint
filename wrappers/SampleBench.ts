@@ -71,6 +71,10 @@ export class SampleBench implements Contract {
     })
   }
 
+  async getBalance(provider: ContractProvider): Promise<bigint> {
+    return (await provider.getState()).balance
+  }
+
   async getState(provider: ContractProvider) {
     const result = await provider.get('state', [])
     return {

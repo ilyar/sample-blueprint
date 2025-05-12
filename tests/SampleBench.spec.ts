@@ -18,6 +18,8 @@ describe('SampleBench', () => {
     app = blockchain.openContract(SampleBench.createFromConfig(code))
     deployer = await blockchain.treasury('deployer')
     user = await blockchain.treasury('user')
+
+    const balance = await deployer.getBalance()
     const out = await app.sendDeploy(deployer.getSender(), toNano('0.05'))
     expect(out.transactions).toHaveTransaction({
       from: deployer.address,
@@ -25,6 +27,8 @@ describe('SampleBench', () => {
       deploy: true,
       success: true,
     })
+    const spend = await deployer.getBalance().then((after) => balance - after)
+    console.log({ spend })
   })
 
   it(`${compiler} - should deploy`, async () => {

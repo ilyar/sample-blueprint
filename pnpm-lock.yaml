@@ -27,13 +27,13 @@ importers:
         specifier: ^3.3.0
         version: 3.3.0
       '@ton/sandbox':
-        specifier: ^0.29.0
-        version: 0.29.0(@ton/crypto@3.3.0)
+        specifier: ^0.30.0
+        version: 0.30.0(@ton/crypto@3.3.0)
       '@ton/test-utils':
         specifier: '>=0.5.0'
         version: 0.5.0(@jest/globals@29.7.0)(@ton/core@0.60.1(@ton/crypto@3.3.0))
       '@ton/tolk-js':
-        specifier: 0.11.0
+        specifier: ^0.11.0
         version: 0.11.0
       '@ton/ton':
         specifier: '>=15.2.1 <16.0.0'
@@ -435,8 +435,8 @@ packages:
   '@ton/crypto@3.3.0':
     resolution: {integrity: sha512-/A6CYGgA/H36OZ9BbTaGerKtzWp50rg67ZCH2oIjV1NcrBaCK9Z343M+CxedvM7Haf3f/Ee9EhxyeTp0GKMUpA==}
 
-  '@ton/sandbox@0.29.0':
-    resolution: {integrity: sha512-Xl364A6XeH/vr2iG2MER1o0RWv2wP0kK/gbZkREPOd3bY2TRDcCwtnsFBsRfUQUi9/QHPCpNOz//guc5HhOw5g==}
+  '@ton/sandbox@0.30.0':
+    resolution: {integrity: sha512-fFqwZrMT0KVdWmc/GieBbV0xrs58bx+JUbcHTq/fGLP8dNAKqbnX9ddIT1jA0N8WFOIIAF9MDw0CeIc6h0C8tA==}
     peerDependencies:
       '@ton/crypto': '>=3.3.0'
 
@@ -2469,7 +2469,7 @@ snapshots:
       jssha: 3.2.0
       tweetnacl: 1.0.3
 
-  '@ton/sandbox@0.29.0(@ton/crypto@3.3.0)':
+  '@ton/sandbox@0.30.0(@ton/crypto@3.3.0)':
     dependencies:
       '@ton/crypto': 3.3.0
 

@@ -1,6 +1,6 @@
 import { CompilerConfig } from '@ton/blueprint'
 
-export const compile: CompilerConfig & { verbose?: number } = {
+export const compile: CompilerConfig = {
   lang: 'tact',
   target: 'contracts/SampleBench.tact',
 }

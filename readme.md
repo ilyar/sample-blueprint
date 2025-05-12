@@ -21,7 +21,6 @@ pnpm add -D ../sandbox-bench/dist/@ton-sandbox-bech.tgz ../blueprint-bench/dist/
 ```
 
 **Setup `jest.config.ts`:**
-
 ```ts
 import type { Config } from 'jest';
 
@@ -33,13 +32,11 @@ const config: Config = {
         'default',
         ['@ton/sandbox/jest-reporter', {
             contractDatabase: 'abi.json',
-            reportName: '.benchmark',
-            mode: 'onlyMetric',
             contractExcludes: [
                 'TreasuryContract',
             ],
         }],
-    ],
+    ]
 };
 
 export default config;
@@ -48,16 +45,44 @@ export default config;
 **Run tests and collect metric:**
 
 ```bash
-TON_COMPILER=tact npx blueprint snapshot -l "tact v1.6.7"
-TON_COMPILER=func npx blueprint snapshot -l "func v0.9.1"
-# or
-for v in 0.{6..11}.0; do pnpm add -D "@ton/tolk-js@$v" && npx blueprint snapshot -l "tolk v$v"; done
+npx blueprint snapshot -l "some label"
 ```
 
-**Get benchmark:**
+**Get report:**
 
 ```bash
 npx blueprint test --gas-report
 ```
 
-🧙🏻‍♂️ See result [.benchmark](.benchmark)
+**Or setup `gas-report.config.ts`:**
+
+```ts
+import config from './jest.config';
+
+config.testEnvironment = '@ton/sandbox/jest-environment'
+config.reporters = [
+    ['@ton/sandbox/jest-reporter', {
+        contractDatabase: 'abi.json',
+        contractExcludes: [
+            'TreasuryContract',
+        ],
+    }],
+]
+export default config;
+```
+
+**Run tests and collect metric:**
+
+```bash
+npx blueprint snapshot -l "some label" -- --config gas-report.config.ts
+```
+
+**Get report:**
+
+```bash
+npx blueprint test --gas-report -- --config gas-report.config.ts
+# or
+pnpm gas-report
+```
+
+🧙🏻‍♂️ See result [.benchmark](.snapshot) and [gas-report.json](gas-report.json)
