@@ -59,6 +59,7 @@ npx blueprint test --gas-report
 ```ts
 import config from './jest.config';
 
+config.testNamePattern = '^SampleBench .* - should sent incrAction$'
 config.testEnvironment = '@ton/sandbox/jest-environment'
 config.reporters = [
     ['@ton/sandbox/jest-reporter', {
